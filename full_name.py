@@ -10,3 +10,5 @@ print(message)
 
 print("Python")
 print("\tPython\n\tHello")
+print()
+print("Languages:\n\tPython\n\tC\n\tJavaScript")
