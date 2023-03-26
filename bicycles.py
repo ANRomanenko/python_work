@@ -73,8 +73,18 @@ print(motos)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
 print()
 peoples = ['ira', 'katia', 'anastasia', 'alexandra']
-print(f'Сегодня придти не сможет {peoples[1].title()}')
-del peoples[1]
-peoples.append('lera')
-for people in peoples:
-    print(f"Приглашаю, Вас {people.title()} сегодня восетить мой дом и угоститься прекрасным ужином")
+print(f'Пригоашаю вас на вечер: \n\t{peoples[0].title()}\n')
+print(f'Пригоашаю вас на вечер: \n\t{peoples[1].title()}\n')
+print(f'Пригоашаю вас на вечер: \n\t{peoples[2].title()}\n')
+print(f'Пригоашаю вас на вечер: \n\t{peoples[3].title()}\n')
+print(f'К сожалению {peoples[1].title()} сегодня придти не сможет!\n')
+peoples = ['ira', 'lera', 'anastasia', 'alexandra']
+print(f'Новый список приглашённых на вечер: {peoples}\n')
+print(f'Приглашаю вас на вечер: \n\t{peoples[0].title()}\n')
+print(f'Приглашаю вас на вечер: \n\t{peoples[1].title()}\n')
+print(f'Приглашаю вас на вечер: \n\t{peoples[2].title()}\n')
+print(f'Приглашаю вас на вечер: \n\t{peoples[3].title()}\n')
+peoples.insert(0, 'karina')
+peoples.insert(2, 'sveta')
+peoples.append('ksusha')
+print(peoples)
