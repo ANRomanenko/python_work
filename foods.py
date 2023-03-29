@@ -11,9 +11,40 @@ friend_foods.append('ice cream')
 
 
 print("My favorite foods are:")
-print(my_foods)
+for myfood in my_foods:
+    print(myfood.title())
 
 print("\nMy friend's favorite foods are:")
-print(friend_foods)
+for myfrends in friend_foods:
+    print(myfrends.title())
 print()
 
+text_1 = "The irst three items in the list are:»"
+print(text_1)
+print(text_1[:15])
+print()
+
+text_2 = "Three items from the middle of the list are"
+print(text_2)
+print(text_2[11:][:16])
+print()
+
+text_3 = "The last three items in the list are"
+print(text_3)
+print(text_3[-13:])
+
+# Копия программы пицца
+
+my_pizza = ["paperoni", "chees", "patatas", "cremas"]
+friend_pizza = my_pizza[:]
+
+my_pizza.append("parmezan")
+friend_pizza.append("salatas")
+
+print("\nMy favorite pizzas are:")
+for pizza in my_pizza:
+    print(pizza.title())
+
+print("\nMy friend’s favorite pizzas are")
+for fpizza in friend_pizza:
+    print(fpizza.title())
