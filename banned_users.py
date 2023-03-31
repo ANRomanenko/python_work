@@ -15,6 +15,7 @@ print(car == 'subaru')
 print("\nIs car == 'audi'? I predict False")
 print(car == 'audi')
 print()
+
 # ----------------------------------------
 # True
 # 1 - Условие (True)
@@ -41,3 +42,48 @@ print(number == 35)
 print()
 
 # 5 - Условие (True)
+
+x = 0
+if x == 0:
+    x += 1
+
+print(100/x, 'True')
+print()
+
+# ----------------------------------------
+# False
+# 1 - Условие (False)
+
+sums = 18
+print(sums == 17)
+
+# 2 - Условие (False)
+age_0 = 22
+age_1 = 18
+print(age_0 >= 21 and age_1 >= 21)
+
+# 3 - Условие (False)
+auto = ['audi', 'bmw', 'toyota']
+print('ford' in auto)
+print()
+
+# 4 - Условие (False)
+eat = ['peperoni', 'chees', 'salat']
+eats = 'peperoni'
+if eats not in eat:
+    print(f'{eats.title()}, Hello')
+else:
+    print(False)
+
+# 5 - Условие (False)
+y = 0
+if y == 1:
+    y =+ 1
+else:
+    print(False)
+
+print()
+
+mashina = 'Audi'
+print(mashina.lower() == 'audi')
+print(mashina)
