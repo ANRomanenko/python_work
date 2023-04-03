@@ -22,4 +22,13 @@ for new_user in new_users:
         print(f'Это имя, {new_user} доступно')
 print()
 
-number = ['1st']
+number = [1, 2, 3, 4, 5, 6, 7, 9]
+for num in number:
+    if num == 1:
+        print('1st')
+    elif num == 2:
+        print('2nd')
+    elif num == 3:
+        print('3rd')
+    else:
+        print(f"{num}th")
