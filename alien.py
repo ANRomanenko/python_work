@@ -72,4 +72,59 @@ favorite_languages = {
     'phil': 'python',
     }
 
-print(favorite_languages['jen'])
+for name, language in favorite_languages.items():
+    print(f"{name.title()}'s favorite language is {language.title()}")
+print()
+for name in favorite_languages.keys():
+    print(name.title())
+print()
+# print(favorite_languages['jen'])
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print("Hi", name.title())
+
+    if name in friends:
+        language = favorite_languages[name].title()
+        print(f"\t {name.title()}, I see you love {language}!")
+print()
+
+if 'erin' not in favorite_languages.keys():
+    print("Erin, please take our poll!")
+print()
+# Перебор ключей словаря в определенном порядке
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll!")
+print()
+# Перебор всех значений в словаре
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+print("The following language have been mentioned:")
+for language in sorted(set(favorite_languages.values())): # Избавляемся дубликатов множеством set()
+    print(language.title())
+print()
+
+niles = {'dnipro': 'ukraine', 'nile': 'egypt', 'sozh': 'belarus'}
+for nile, city in niles.items():
+    print(f"The {nile.title()} runs through {city.title()}")
