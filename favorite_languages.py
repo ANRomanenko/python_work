@@ -39,7 +39,9 @@ favorite_languages = {
     'phil': ['python', 'haskell'],
     }
 
+
 for name, languages in favorite_languages.items():
-    print(f"\n{name.title()}'s favorite language are")
-    for language in languages:
-        print(f"\t{language.title()}")
+    if len(languages) < 2:
+        print(f"\n{name.title()}'s favorite language is: ")
+        for language in languages:
+            print(f"\t{language.title()}")
