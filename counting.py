@@ -44,3 +44,10 @@ while True:
         print("Билет стоит 10$")
     else:
         print("Билет стоит 15$")
+
+print()
+
+count = 0
+while count <= 20:
+    print(count)
+    count += 1
