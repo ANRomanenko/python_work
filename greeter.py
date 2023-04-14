@@ -73,3 +73,29 @@ print(music)
 
 music = make_album('asti', 'pervuy')
 print(music)
+print()
+
+# Упражнение 8.8 (Пользовательские альбомы)
+
+
+def make_album(name, album_name, dorogka=None):
+    musicant = {'name': name, 'album': album_name}
+    if dorogka:
+        musicant['num'] = dorogka
+    return musicant
+
+
+while True:
+    print("\nНапишите исполнителя и название альбома: ")
+    print("Для выхода нажмите 'q' ")
+
+    i_name = input("Введите исполнителя: ")
+    if i_name == 'q':
+        break
+
+    a_name = input("Введите название альбома: ")
+    if a_name == 'q':
+        break
+
+    make = make_album(i_name, a_name)
+    print(f"\nИмя исполнителя и альбом: {make}")
