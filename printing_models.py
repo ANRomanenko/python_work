@@ -40,3 +40,15 @@ completed_models = []
 
 print_models(unprinted_designs, completed_models)
 show_completed_models(completed_models)
+print()
+
+
+sp = ['test', 'tes52']
+
+
+def show_messages(spisok):
+    return spisok
+
+
+html = show_messages(sp)
+print(html)
